@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "MLC Test Page";
+}
+@model MLC.Web.Models.PropertyListViewModel
+
+@using (Html.BeginForm())
+{
+    <hr />
+    <div class="form-horizontal">
+        <div class="form-group">
+            <div >
+                @Html.LabelFor(model => model.Gender, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownListFor(model => model.Gender, new List<SelectListItem>
+{ new SelectListItem { Text = "All", Value = "All" },new SelectListItem{Text="Male", Value="Male"},
+ new SelectListItem{Text="Female", Value="Female"} }, new { @class = "form-control" })
+                </div>
+            </div>
+            </div>
+
+            <div class="form-group">
+           
+        <div> 
+            @Html.LabelFor(model => model.PropertyType, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.DropDownListFor(model => model.PropertyType, new List<SelectListItem>
+       {new SelectListItem{Text="All", Value="All"}, new SelectListItem{Text="Holiday", Value="Holiday"},
+         new SelectListItem{Text="Residential", Value="Residential"}},  new { @class = "form-control" })
+            </div>
+            </div>
+        </div>
+        
+
+        <div id="propertyContainer">
+            @Html.Partial("_PropertyListing",Model)
+             
+        </div>
+
+        
+    </div>
+}

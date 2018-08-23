@@ -1,0 +1,83 @@
+﻿[
+  {
+    "name": "Bob",
+    "gender": "Male",
+    "age": 23,
+    "properties": [
+      {
+        "name": "Cottage",
+        "type": "Holiday"
+      },
+      {
+        "name": "Oaklands",
+        "type": "Residential"
+      }
+    ]
+  },
+  {
+    "name": "Jennifer",
+    "gender": "Female",
+    "age": 18,
+    "properties": [
+      {
+        "name": "The Croft",
+        "type": "Holiday"
+      }
+    ]
+  },
+  {
+    "name": "Steve",
+    "gender": "Male",
+    "age": 45,
+    "properties": null
+  },
+  {
+    "name": "Fred",
+    "gender": "Male",
+    "age": 40,
+    "properties": [
+      {
+        "name": "Lodge",
+        "type": "Holiday"
+      },
+      {
+        "name": "Hillside",
+        "type": "Holiday"
+      },
+      {
+        "name": "Stables",
+        "type": "Holiday"
+      },
+      {
+        "name": "Stevie",
+        "type": "Residential"
+      }
+    ]
+  },
+  {
+    "name": "Samantha",
+    "gender": "Female",
+    "age": 40,
+    "properties": [
+      {
+        "name": "Highfield",
+        "type": "Holiday"
+      }
+    ]
+  },
+  {
+    "name": "Alice",
+    "gender": "Female",
+    "age": 64,
+    "properties": [
+      {
+        "name": "Greenacres",
+        "type": "Holiday"
+      },
+      {
+        "name": "Wayside",
+        "type": "Residential"
+      }
+    ]
+  }
+]

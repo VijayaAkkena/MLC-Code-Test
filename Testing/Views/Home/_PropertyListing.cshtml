@@ -1,0 +1,41 @@
+﻿@model MLC.Web.Models.PropertyListViewModel
+<table class="table" id="propertyListing">
+    <tr>
+        <th>
+            Gender
+        </th>
+        <th>
+            Owner Name
+        </th>
+        <th>
+            Property Name
+        </th>
+        <th>
+            Property Type
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Properties.Type)
+            </th>*@
+
+    </tr>
+    @foreach (var item in Model.PropertyList)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PropertyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PropertyType)
+            </td>
+
+        </tr>
+
+
+    }
+</table>
